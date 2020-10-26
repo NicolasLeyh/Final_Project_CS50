@@ -1,0 +1,395 @@
+
+
+$color1: rgb(53, 53, 53);
+$colorbackground: rgb(116, 233, 253);
+
+h1 {
+    color: $color1;
+    text-align: center;
+    padding: 65px;
+}
+
+#firstText {
+
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+    h2 {
+        color: #353535;
+        text-align: center;
+        font-family: 'Nothing You Could Do', "Garamond", cursive;
+        font-size: 16px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+#inhaltsbox {
+
+    h2 {
+        color: $color1;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-family: 'Nothing You Could Do', "Garamond", cursive;
+        font-size: 40px;
+    }
+
+    li {
+        color: $color1;
+        text-align: left;
+        font-family: 'Roboto Slab', "Garamond", serif;
+        font-size: 20px;
+    }
+
+    p {
+        color: $color1;
+        text-align: justify;
+        font-family: 'Roboto Slab', "Garamond", serif;
+        font-size: 15px;
+    }
+
+}
+
+.navbar-brand{
+    padding: 25px;
+}
+
+.navbar-nav{
+    padding: 5px;
+    float: right;
+    margin: auto;
+
+}
+
+.container-fluid{
+    background-color: $colorbackground;
+    font-family: 'Nothing You Could Do', "Garamond", cursive;
+}
+
+.container{
+    padding: 10px
+}
+
+@media only screen and (max-width: 1000px) {
+      .col-2 {
+        font-size: 10px;
+    }
+  }
+
+.col-2 {
+    border: 3px solid $colorbackground;
+    margin-right: 15x;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    font-family: 'Roboto Slab', "Garamond", serif;
+}
+
+.col-12 {
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 1000px) {
+.mb-4 {
+
+    font-family: 'Nothing You Could Do', "Garamond", cursive;
+
+        .card-image {
+            background-image: url(https://blobsvc.wort.lu/picture/457ec9909c1329cc163764e389c2019e/1600/600/crop/267/417/3054/1465/wortv3/5aa3dcff3019d38660e13bb6ae16872456dcdb70);
+        }
+
+        h1 {
+            font-size: 50px;
+            color: white;
+            font-weight: bold;
+            text-align: left;
+            position: relative;
+        }
+
+        p {
+            color: $color1;
+            background-color: rgba(255, 255, 255, 0.7);
+            font-size: 25px;
+            font-style: bold;
+            text-align: left;
+            padding-left: 65px;
+            padding-right: 65px;
+            padding-top: 20px;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .mb-4 {
+    
+        font-family: 'Nothing You Could Do', "Garamond", cursive;
+    
+            .card-image {
+                background-image: url(https://blobsvc.wort.lu/picture/457ec9909c1329cc163764e389c2019e/1600/600/crop/267/417/3054/1465/wortv3/5aa3dcff3019d38660e13bb6ae16872456dcdb70);
+            }
+    
+            h1 {
+                font-size: 40px;
+                color: white;
+                font-weight: bold;
+                text-align: left;
+                position: relative;
+            }
+    
+            p {
+                color: $color1;
+                background-color: rgba(255, 255, 255, 0.7);
+                font-size: 18px;
+                font-style: bold;
+                text-align: left;
+                padding-left: 65px;
+                padding-right: 65px;
+                padding-top: 20px;
+            }
+    
+        }
+    }
+
+#SantaBarbara, #Vancouver, #Marrakech {
+        @extend.mb-4;
+        h1 {
+            text-align: right;
+        }
+        p {
+            text-align: right;
+        }
+
+    }
+
+
+#SantaBarbara {
+    .card-image {
+        background-image: url(https://www.visitcalifornia.com/sites/default/files/styles/welcome_image/public/vc_spotlight_santabarbara_hero_st_rm_529573764_1280x640_0.jpg);
+    }
+}
+
+#Bali {
+    .card-image {
+        background-image: url(https://www.viceroybali.com/img/home_banner/viceroy-bali-stunning-view.jpg);
+    }
+}
+
+#Vancouver {
+    .card-image {
+        background-image: url(https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/vancouverbc/Aerial_Sunset_Vancouver_d3_copy_1bb86ed0-1edc-4cda-841d-0b033ca0bb72.jpg);
+    }
+}
+
+#SanFrancisco {
+    .card-image {
+        background-image: url(https://www.ef.com/sitecore/__/~/media/universal/pg/8x5/destination/US_US-CA_SFO_1.jpg);
+    }
+}
+
+#Marrakech {
+    .card-image {
+        background-image: url(https://www.falstaff.ch/fileadmin/_processed_/b/8/csm_marrakesch-city-market-view-2640_0aee0388a4.jpg);
+    }
+}
+
+
+/*social media links*/
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+$timing        : 265ms;
+$iconColor     : #00B5F5;
+$accent        : #002A8F;
+$bluefade      : #0043E0;
+$gradient      : #00B5F5;
+
+@mixin transformScale($size: 1) {
+    transform: scale($size);
+    -ms-transform: scale($size);
+    -webkit-transform: scale($size);
+}
+
+body {
+    background-color: rgba($iconColor, 0.05);
+}
+
+.social-container {
+    width: 400px;
+    margin: 6vh auto;
+    text-align: center;
+}
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 1em;
+  
+    li {
+        display: inline-block;
+        margin: 0.15em;
+        position: relative;
+        font-size: 1.2em;
+
+    }
+
+    i {
+        color: #fff;
+        position: absolute;
+        top: 21px;
+        left: 21px;
+        transition: all $timing ease-out;
+    }
+
+    a {
+        display: inline-block;
+      
+        &:before {
+            @include transformScale();
+            content: " ";
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            display: block;
+            background: linear-gradient(45deg, $iconColor, $accent);
+            transition: all $timing ease-out;
+        }
+        
+        &:hover:before {
+            transform: scale(0);
+            transition: all $timing ease-in;
+        }
+        
+        &:hover i {
+            @include transformScale(2.2);
+            color: $iconColor;
+            background: -webkit-linear-gradient(45deg, $iconColor, $accent);
+            -webkit-text-fill-color: transparent;
+            transition: all $timing ease-in;
+        }
+    }
+  
+}
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+
+body {
+  background: #261011;
+  letter-spacing: 0.01em;
+}
+
+    
+h6 {
+    color: $color1;
+    text-align: center;
+    font-family: 'Roboto Slab', "Garamond", serif;
+    font-size: 5px;
+}
+
+
+/*footer*/
+
+html {
+    font-size: 14px;
+    }
+    @media (min-width: 768px) {
+    html {
+        font-size: 16px;
+     }
+    }
+      
+    .container {
+    max-width: 960px;
+    }
+
+    .col-md {
+        text-align: center;
+    }
+      
+
+/*clock*/
+
+#txt {
+    color: #fcf9f9;
+    text-align: center;
+    font-family: 'Roboto Slab', "Garamond", serif;
+    font-size: 20px;
+  }
+
+
+/*factsheet*/
+
+.table {
+    margin-left: 20px;
+    margin-top: 20px;
+
+    td {
+        color: $color1;
+        text-align: justify;
+        font-family: 'Roboto Slab', "Garamond", serif;
+        font-size: 15px;
+    }
+
+    th {
+        color: $color1;
+        text-align: justify;
+        font-family: 'Roboto Slab', "Garamond", serif;
+        font-size: 15px;
+    }
+}
+
+/*weather widget*/
+
+.weatherwidget-io {
+    
+    border: 0.5px groove gray;
+    margin-top: 40px;
+    width: 80%;
+    margin: auto;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+    width: 80%;
+    border: 0.5px groove gray;
+    margin: auto;
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+  }
+
+/*video
+
+.video {
+    margin: auto;
+    justify-content: center;
+}
+*/
